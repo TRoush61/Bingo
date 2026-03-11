@@ -295,7 +295,7 @@
                 </div>
                 <div class="right-side">
                     <strong class="team-name">
-                        <span :class="teamNumberToColor(movement.team)">Team {{ teamInfo(movement.team).name }}</span>
+                        <span :class="teamNumberToColor(movement.team)">{{ teamInfo(movement.team).name }}</span>
                     </strong> 
                     <span class="team-members">
                         <span class="team-member" v-for="(member, mindex) in teamInfo(movement.team).members" :key="`member${mindex}`">
