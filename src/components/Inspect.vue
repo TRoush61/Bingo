@@ -110,7 +110,7 @@
                 <span v-else class="teams-header">No teams have completed this tile</span>
                 <div class="teams-list">
                     <div v-for="(team, index) in inspectData.completions" :key="`team${index}-completion`" class="team">
-                    <span class="team-name">Team {{ team.name }}</span>
+                    <span class="team-name">{{ team.name }}</span>
                     <span v-if="team.partialComplete">
                         <span class="partial-complete">Partial</span>
                         <span class="partial-complete">-{{ team.pointOffset }} Points</span>
